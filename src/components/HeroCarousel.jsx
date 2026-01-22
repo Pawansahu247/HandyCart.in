@@ -1,30 +1,29 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
 const slides = [
   {
     id: 1,
     title: "HANDMADE POTTERY",
     subtitle: "Directly from Jashpur Artisans",
-    bg: "bg-[#BC6C25]",
+    bg: "bg-[#8E2C5D]",
     icon: "🏺"
   },
   {
     id: 2,
     title: "PURE HANDLOOM",
     subtitle: "Silk Saris from Ranchi",
-    bg: "bg-[#434C24]",
+    bg: "bg-[#4E5B3A]",
     icon: "🧵"
   },
   {
     id: 3,
     title: "WOODEN CRAFTS",
     subtitle: "Traditional Bastar Art",
-    bg: "bg-[#DDA15E]",
+    bg: "bg-[#C94A7A]",
     icon: "🪵"
   }
 ];
@@ -42,7 +41,9 @@ const HeroCarousel = () => {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div className={`${slide.bg} p-10 md:p-16 text-white relative h-48 md:h-64 flex flex-col justify-center`}>
+            <div
+              className={`${slide.bg} p-10 md:p-16 text-white relative h-48 md:h-64 flex flex-col justify-center`}
+            >
               <div className="relative z-10">
                 <h2 className="text-3xl md:text-5xl font-black italic leading-tight">
                   {slide.title}
@@ -51,6 +52,7 @@ const HeroCarousel = () => {
                   {slide.subtitle}
                 </p>
               </div>
+
               {/* Decorative Icon */}
               <div className="absolute right-4 bottom-0 text-9xl opacity-20 rotate-12 select-none">
                 {slide.icon}
@@ -59,11 +61,15 @@ const HeroCarousel = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      
-      {/* Custom Pagination Styling */}
+
+      {/* Pagination Theme */}
       <style>{`
-        .swiper-pagination-bullet-active { background: #BC6C25 !important; }
-        .swiper-pagination-bullet { background: rgba(0,0,0,0.2); }
+        .swiper-pagination-bullet-active {
+          background: #8E2C5D !important;
+        }
+        .swiper-pagination-bullet {
+          background: rgba(142,44,93,0.25);
+        }
       `}</style>
     </section>
   );

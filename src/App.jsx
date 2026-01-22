@@ -62,10 +62,13 @@ function App() {
       <SellerRegister isOpen={showRegister} onClose={() => setShowRegister(false)} onComplete={() => setShowRegister(false)} />
       <SellProduct isOpen={isSelling} onClose={() => setIsSelling(false)} />
 
-      <div className="w-full bg-[#FDFBF7]">
-        <header className="sticky top-0 z-50 bg-[#FDFBF7] border-b">
-          <Header onProfileClick={() => setShowAuth(true)} onSearch={handleSearch} />
-        </header>
+      <div className="w-full min-h-screen bg-[#F3ECFA]">
+  <header className="sticky top-0 z-50 bg-transparent">
+    <Header
+      onProfileClick={() => setShowAuth(true)}
+      onSearch={handleSearch}
+    />
+  </header>
 
         <main className="w-full max-w-7xl mx-auto flex flex-col">
           {/* 🔄 SWITCHING LOGIC */}

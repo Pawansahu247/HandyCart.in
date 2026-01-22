@@ -11,7 +11,7 @@
 // //         <div className="flex justify-between items-end mb-6 max-w-7xl mx-auto">
 // //           <div>
 // //             <h1 className="text-3xl font-extrabold text-handy-earth tracking-tight leading-none">
-// //               HandyCart
+// //               HandiKart
 // //             </h1>
 // //             <p className="text-handy-bark/60 text-xs font-bold mt-1 uppercase tracking-widest">
 // //               Village to Home
